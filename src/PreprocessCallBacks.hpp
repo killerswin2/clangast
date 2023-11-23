@@ -47,7 +47,6 @@ public:
     void AddCreateMethod(const clang::Token& MacroNameTok, const clang::MacroDefinition& MD, clang::SourceRange Range, const clang::MacroArgs* Args)
     {
         ScriptingCreator scriptingCreator;
-        std::string methodName, internalMethodName, className;
 
         const clang::Token* tokMethodName = Args->getUnexpArgument(0);
         const clang::Token* tokInternalMethodName = Args->getUnexpArgument(1);
@@ -72,62 +71,91 @@ public:
         
         llvm::StringRef stringMethodName = tokMethodName->getLiteralData();
         stringMethodName = stringMethodName.substr(1, tokMethodName->getLength() - 1);
+        stringMethodName = stringMethodName.trim(" \t\n\v\f\r\"");
 
         llvm::StringRef stringInternalMethodName = tokInternalMethodName->getLiteralData();
         stringInternalMethodName = stringInternalMethodName.substr(1, tokInternalMethodName->getLength() - 1);
+        stringInternalMethodName = stringInternalMethodName.trim(" \t\n\v\f\r\"");
 
         llvm::StringRef stringClassName = tokClassName->getLiteralData();
         stringClassName = stringClassName.substr(1, tokClassName->getLength() - 1);
+        stringClassName = stringClassName.trim(" \t\n\v\f\r\"");
 
-        std::pair<std::string, std::string> classInfo{stringInternalMethodName, stringClassName};
-        auto classMap = scriptingCreator.GetClassMap();
-        classMap.insert_or_assign(stringClassName.str() + "::" + stringMethodName.str(), classInfo);
+        std::pair<std::string, std::string> methodInfo{stringInternalMethodName.str(), stringClassName.str()};
+        auto& MethodMap = scriptingCreator.GetMethodMap();
+
+        if(MethodMap.find(stringClassName.str() + "::" + stringMethodName.str()) != MethodMap.end())
+        {
+            // TODO: Add warning code for duplicates
+        }
+        else
+        {
+            MethodMap[stringClassName.str() + "::" + stringMethodName.str()] = methodInfo;
+        }
 
     }
 
     //#define CREATE_FUNCTION(FunctionName, InternalFunctionName)
     void AddCreateFunction(const clang::Token& MacroNameTok, const clang::MacroDefinition& MD, clang::SourceRange Range, const clang::MacroArgs* Args)
     {
-        unsigned int argNum = Args->getNumMacroArguments();
-        for(int i = 0; i < argNum; i++)
+        ScriptingCreator scriptingCreator;
+
+        const clang::Token* tokFunctionName = Args->getUnexpArgument(0);
+        const clang::Token* tokInternalFunctionName = Args->getUnexpArgument(1);
+
+        // we only support string literals in the macros
+        if(tokFunctionName->getKind() != clang::tok::TokenKind::string_literal)
         {
-            const clang::Token* tok = Args->getUnexpArgument(i);
-
-            if(tok->getKind() != clang::tok::TokenKind::string_literal)
-            {
-                // we only support string literals in the macros
-                llvm::outs() << "FAILURE: NOT A STRING LITERAL. LOCATION: " << tok->getLocation().printToString(SourceManager) << "\n";
-                exit(1);
-            }
-
-            llvm::StringRef string = tok->getLiteralData();
-            string = string.substr(0, tok->getLength());
-            llvm::outs() << string << " ";
-
+            llvm::outs() << "FAILURE: NOT A STRING LITERAL. LOCATION: " << tokFunctionName->getLocation().printToString(SourceManager) << "\n";
+            exit(1);
         }
-        llvm::outs() << "\n";
+        else if (tokInternalFunctionName->getKind() != clang::tok::TokenKind::string_literal)
+        {
+            llvm::outs() << "FAILURE: NOT A STRING LITERAL. LOCATION: " << tokInternalFunctionName->getLocation().printToString(SourceManager) << "\n";
+            exit(1);
+        }
+        
+        llvm::StringRef stringFunctionName = tokFunctionName->getLiteralData();
+        stringFunctionName = stringFunctionName.substr(1, tokFunctionName->getLength() - 1);
+        stringFunctionName = stringFunctionName.trim(" \t\n\v\f\r\"");
+
+        llvm::StringRef stringInternalFunctionName = tokInternalFunctionName->getLiteralData();
+        stringInternalFunctionName = stringInternalFunctionName.substr(1, tokInternalFunctionName->getLength() - 1);
+        stringInternalFunctionName = stringInternalFunctionName.trim(" \t\n\v\f\r\"");
+
+        auto& functionMap = scriptingCreator.GetFunctionMap();
+        functionMap.insert_or_assign(stringFunctionName.str(), stringInternalFunctionName.str());
     }
 
     //#define CREATE_CLASS(ClassName, InternalClassName)
     void AddCreateClass(const clang::Token& MacroNameTok, const clang::MacroDefinition& MD, clang::SourceRange Range, const clang::MacroArgs* Args)
     {
-        unsigned int argNum = Args->getNumMacroArguments();
-        for(int i = 0; i < argNum; i++)
+        ScriptingCreator scriptingCreator;
+
+        const clang::Token* tokClassName = Args->getUnexpArgument(0);
+        const clang::Token* tokInternalClassName = Args->getUnexpArgument(1);
+
+        // we only support string literals in the macros
+        if(tokClassName->getKind() != clang::tok::TokenKind::string_literal)
         {
-            const clang::Token* tok = Args->getUnexpArgument(i);
-
-            if(tok->getKind() != clang::tok::TokenKind::string_literal)
-            {
-                // we only support string literals in the macros
-                llvm::outs() << "FAILURE: NOT A STRING LITERAL. LOCATION: " << tok->getLocation().printToString(SourceManager) << "\n";
-                exit(1);
-            }
-
-            llvm::StringRef string = tok->getLiteralData();
-            string = string.substr(0, tok->getLength());
-            llvm::outs() << string << " ";
-
+            llvm::outs() << "FAILURE: NOT A STRING LITERAL. LOCATION: " << tokClassName->getLocation().printToString(SourceManager) << "\n";
+            exit(1);
         }
-        llvm::outs() << "\n";
+        else if (tokInternalClassName->getKind() != clang::tok::TokenKind::string_literal)
+        {
+            llvm::outs() << "FAILURE: NOT A STRING LITERAL. LOCATION: " << tokInternalClassName->getLocation().printToString(SourceManager) << "\n";
+            exit(1);
+        }
+        
+        llvm::StringRef stringClassName = tokClassName->getLiteralData();
+        stringClassName = stringClassName.substr(1, tokClassName->getLength() - 1);
+        stringClassName = stringClassName.trim(" \t\n\v\f\r\"");
+
+        llvm::StringRef stringInternalClassName = tokInternalClassName->getLiteralData();
+        stringInternalClassName = stringInternalClassName.substr(1, tokInternalClassName->getLength() - 1);
+        stringInternalClassName = stringInternalClassName.trim(" \t\n\v\f\r\"");
+
+        auto& classMap = scriptingCreator.GetClassMap();
+        classMap.insert_or_assign(stringClassName.str(), stringInternalClassName.str());
     }
 };

@@ -4,6 +4,7 @@
 #include <llvm/Support/raw_ostream.h>
 
 #include "DeclFinderAction.hpp"
+#include "ScriptingCreator.hpp"
 #include <vector>
 
 static llvm::cl::extrahelp CommonHelp(clang::tooling::CommonOptionsParser::HelpMessage);
@@ -19,5 +20,28 @@ int main(int argc, const char **argv)
     clang::tooling::ClangTool tool{option.get().getCompilations(), files};
 
     tool.run(clang::tooling::newFrontendActionFactory<DeclFindingAction>().get());
+
+    ScriptingCreator scriptC;
+    auto methodMap = scriptC.GetMethodMap();
+
+    for(auto& [key, value]: methodMap)
+    {
+       llvm::outs() << "Key: " << key << " Value: " << value.first << ", " << value.second << "\n";
+    }
+
+    auto functionMap = scriptC.GetFunctionMap();
+
+    for(auto& [key, value]: functionMap)
+    {
+        llvm::outs() << "Key: " << key << " Value: " << value << "\n";
+    }
+
+    auto classMap = scriptC.GetClassMap();
+
+    for(auto& [key, value]: classMap)
+    {
+        llvm::outs() << "Key: " << key << " Value: " << value << "\n";
+    }
+
     return 0;
 }
