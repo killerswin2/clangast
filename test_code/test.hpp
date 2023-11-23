@@ -7,28 +7,34 @@ class MyClass
     int foo;
 
 public:
-    void bar() CREATE_METHOD("bar", "bar", "MyClass") {}
-    CREATE_CLASS("MyClass", "MyClass")
+    void bar(){}
 };
 
 class Test
 {
     public:
     int foo_public;
-    private:
-    static int foo_s;
-    const int foo_c = 0;
-    double foo_d;
+
     const MyClass *TestClassStuff(const MyClass &objectClass, const int &valueForFoo)
+    CREATE_METHOD("TestClassStuff", "TestClassStuff", "Test")
     {
         return new MyClass();
     }
 
     const MyClass *TestClassStuff2(const MyClass &objectClass, const int &valueForFoo) const
+    CREATE_METHOD("TestClassStuff2", "TestClassStuff2", "Test")
     {
         return new MyClass();
     }
+
+    private:
+    static int foo_s;
+    const int foo_c = 0;
+    double foo_d;
+
     Test() {}
+
+    CREATE_CLASS("Test", "Test")
 };
 
 int CreateNewClass() CREATE_FUNCTION("CreateNewClass", "CreateNewClass")
