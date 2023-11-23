@@ -1,0 +1,312 @@
+The system is: Darwin - 23.1.0 - arm64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/local/bin/clang 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is Clang, found in "/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/3.25.1/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/local/bin/clang++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is Clang, found in "/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/3.25.1/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-FTLt0j
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_adc11/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_adc11.dir/build.make CMakeFiles/cmTC_adc11.dir/build
+Building C object CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o
+/usr/local/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o -c /Applications/CMake.app/Contents/share/cmake-3.25/Modules/CMakeCCompilerABI.c
+clang version 18.0.0 (https://github.com/llvm/llvm-project.git ba3598667f0da87961b6bec390bc7b03cfa72583)
+Target: arm64-apple-darwin23.1.0
+Thread model: posix
+InstalledDir: /usr/local/bin
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ (in-process)
+ "/usr/local/bin/clang-18" -cc1 -triple arm64-apple-macosx11.3.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=11.3 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -fbuiltin-headers-in-system-modules -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-FTLt0j -target-linker-version 650.9 -v -fcoverage-compilation-dir=/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-FTLt0j -resource-dir /usr/local/lib/clang/18 -dependency-file CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/local/include -internal-isystem /usr/local/lib/clang/18/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o -x c /Applications/CMake.app/Contents/share/cmake-3.25/Modules/CMakeCCompilerABI.c
+clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target arm64-apple-darwin23.1.0
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/local/include"
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/lib/clang/18/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_adc11
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_adc11.dir/link.txt --verbose=1
+/usr/local/bin/clang  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o -o cmTC_adc11 
+clang version 18.0.0 (https://github.com/llvm/llvm-project.git ba3598667f0da87961b6bec390bc7b03cfa72583)
+Target: arm64-apple-darwin23.1.0
+Thread model: posix
+InstalledDir: /usr/local/bin
+ "/usr/bin/ld" -demangle -lto_library /usr/local/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.3.0 11.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_adc11 -L. -L/opt/homebrew/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o -lSystem
+@(#)PROGRAM:ld  PROJECT:ld64-650.9
+BUILD 00:19:34 Mar 17 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	.
+	/opt/homebrew/lib
+	/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local/lib/clang/18/include]
+    add: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include]
+  end of search list found
+  collapse include dir [/usr/local/lib/clang/18/include] ==> [/usr/local/lib/clang/18/include]
+  collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include]
+  implicit include dirs: [/usr/local/lib/clang/18/include;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-FTLt0j]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_adc11/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_adc11.dir/build.make CMakeFiles/cmTC_adc11.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/local/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o -c /Applications/CMake.app/Contents/share/cmake-3.25/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang version 18.0.0 (https://github.com/llvm/llvm-project.git ba3598667f0da87961b6bec390bc7b03cfa72583)]
+  ignore line: [Target: arm64-apple-darwin23.1.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local/bin]
+  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ (in-process)]
+  ignore line: [ "/usr/local/bin/clang-18" -cc1 -triple arm64-apple-macosx11.3.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=11.3 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -fbuiltin-headers-in-system-modules -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-FTLt0j -target-linker-version 650.9 -v -fcoverage-compilation-dir=/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-FTLt0j -resource-dir /usr/local/lib/clang/18 -dependency-file CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/local/include -internal-isystem /usr/local/lib/clang/18/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o -x c /Applications/CMake.app/Contents/share/cmake-3.25/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target arm64-apple-darwin23.1.0]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/lib/clang/18/include]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_adc11]
+  ignore line: [/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_adc11.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/bin/clang  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o -o cmTC_adc11 ]
+  ignore line: [clang version 18.0.0 (https://github.com/llvm/llvm-project.git ba3598667f0da87961b6bec390bc7b03cfa72583)]
+  ignore line: [Target: arm64-apple-darwin23.1.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local/bin]
+  link line: [ "/usr/bin/ld" -demangle -lto_library /usr/local/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.3.0 11.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_adc11 -L. -L/opt/homebrew/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o -lSystem]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/usr/local/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [arm64] ==> ignore
+    arg [-platform_version] ==> ignore
+    arg [macos] ==> ignore
+    arg [11.3.0] ==> ignore
+    arg [11.3] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk] ==> ignore
+    arg [-mllvm] ==> ignore
+    arg [-enable-linkonceodr-outlining] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_adc11] ==> ignore
+    arg [-L.] ==> ignore
+    arg [-L/opt/homebrew/lib] ==> dir [/opt/homebrew/lib]
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_adc11.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+  Library search paths: [;.;/opt/homebrew/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib]
+  Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  collapse library dir [/opt/homebrew/lib] ==> [/opt/homebrew/lib]
+  collapse library dir [.] ==> [/Users/ellisnielsen/git/terminal/clangast]
+  collapse library dir [/opt/homebrew/lib] ==> [/opt/homebrew/lib]
+  collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib]
+  collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: [/opt/homebrew/lib;/Users/ellisnielsen/git/terminal/clangast;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib]
+  implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-mkPrpB
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_38bb7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_38bb7.dir/build.make CMakeFiles/cmTC_38bb7.dir/build
+Building CXX object CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o
+/usr/local/bin/clang++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CMake.app/Contents/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp
+clang version 18.0.0 (https://github.com/llvm/llvm-project.git ba3598667f0da87961b6bec390bc7b03cfa72583)
+Target: arm64-apple-darwin23.1.0
+Thread model: posix
+InstalledDir: /usr/local/bin
+clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ignoring nonexistent directory "/usr/local/bin/../include/c++/v1"
+ (in-process)
+ "/usr/local/bin/clang-18" -cc1 -triple arm64-apple-macosx11.3.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=11.3 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -fbuiltin-headers-in-system-modules -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-mkPrpB -target-linker-version 650.9 -v -fcoverage-compilation-dir=/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-mkPrpB -resource-dir /usr/local/lib/clang/18 -dependency-file CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/local/include -internal-isystem /usr/local/lib/clang/18/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CMake.app/Contents/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target arm64-apple-darwin23.1.0
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/local/include"
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1
+ /usr/local/lib/clang/18/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking CXX executable cmTC_38bb7
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38bb7.dir/link.txt --verbose=1
+/usr/local/bin/clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_38bb7 
+clang version 18.0.0 (https://github.com/llvm/llvm-project.git ba3598667f0da87961b6bec390bc7b03cfa72583)
+Target: arm64-apple-darwin23.1.0
+Thread model: posix
+InstalledDir: /usr/local/bin
+ "/usr/bin/ld" -demangle -lto_library /usr/local/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.3.0 11.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_38bb7 -L. -L/opt/homebrew/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem
+@(#)PROGRAM:ld  PROJECT:ld64-650.9
+BUILD 00:19:34 Mar 17 2021
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	.
+	/opt/homebrew/lib
+	/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1]
+    add: [/usr/local/lib/clang/18/include]
+    add: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include]
+  end of search list found
+  collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1]
+  collapse include dir [/usr/local/lib/clang/18/include] ==> [/usr/local/lib/clang/18/include]
+  collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include]
+  implicit include dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1;/usr/local/lib/clang/18/include;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-mkPrpB]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_38bb7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_38bb7.dir/build.make CMakeFiles/cmTC_38bb7.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/local/bin/clang++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CMake.app/Contents/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang version 18.0.0 (https://github.com/llvm/llvm-project.git ba3598667f0da87961b6bec390bc7b03cfa72583)]
+  ignore line: [Target: arm64-apple-darwin23.1.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local/bin]
+  ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ignoring nonexistent directory "/usr/local/bin/../include/c++/v1"]
+  ignore line: [ (in-process)]
+  ignore line: [ "/usr/local/bin/clang-18" -cc1 -triple arm64-apple-macosx11.3.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=11.3 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -fbuiltin-headers-in-system-modules -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-mkPrpB -target-linker-version 650.9 -v -fcoverage-compilation-dir=/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-mkPrpB -resource-dir /usr/local/lib/clang/18 -dependency-file CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/local/include -internal-isystem /usr/local/lib/clang/18/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -fmax-type-align=16 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CMake.app/Contents/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 18.0.0 based upon LLVM 18.0.0git default target arm64-apple-darwin23.1.0]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/Library/Frameworks"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include/c++/v1]
+  ignore line: [ /usr/local/lib/clang/18/include]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/include]
+  ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_38bb7]
+  ignore line: [/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38bb7.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/bin/clang++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_38bb7 ]
+  ignore line: [clang version 18.0.0 (https://github.com/llvm/llvm-project.git ba3598667f0da87961b6bec390bc7b03cfa72583)]
+  ignore line: [Target: arm64-apple-darwin23.1.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local/bin]
+  link line: [ "/usr/bin/ld" -demangle -lto_library /usr/local/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 11.3.0 11.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_38bb7 -L. -L/opt/homebrew/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/usr/local/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [arm64] ==> ignore
+    arg [-platform_version] ==> ignore
+    arg [macos] ==> ignore
+    arg [11.3.0] ==> ignore
+    arg [11.3] ==> ignore
+    arg [-syslibroot] ==> ignore
+    arg [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk] ==> ignore
+    arg [-mllvm] ==> ignore
+    arg [-enable-linkonceodr-outlining] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_38bb7] ==> ignore
+    arg [-L.] ==> ignore
+    arg [-L/opt/homebrew/lib] ==> dir [/opt/homebrew/lib]
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_38bb7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+  Library search paths: [;.;/opt/homebrew/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib]
+  Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/]
+  remove lib [System]
+  collapse library dir [/opt/homebrew/lib] ==> [/opt/homebrew/lib]
+  collapse library dir [.] ==> [/Users/ellisnielsen/git/terminal/clangast]
+  collapse library dir [/opt/homebrew/lib] ==> [/opt/homebrew/lib]
+  collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib]
+  collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+  implicit libs: [c++]
+  implicit objs: []
+  implicit dirs: [/opt/homebrew/lib;/Users/ellisnielsen/git/terminal/clangast;/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib]
+  implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks]
+
+
+Determining if the include file histedit.h exists passed with the following output:
+Change Dir: /Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-326y7N
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5beeb/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5beeb.dir/build.make CMakeFiles/cmTC_5beeb.dir/build
+Building C object CMakeFiles/cmTC_5beeb.dir/CheckIncludeFile.c.o
+/usr/local/bin/clang   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -MD -MT CMakeFiles/cmTC_5beeb.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_5beeb.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_5beeb.dir/CheckIncludeFile.c.o -c /Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-326y7N/CheckIncludeFile.c
+Linking C executable cmTC_5beeb
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5beeb.dir/link.txt --verbose=1
+/usr/local/bin/clang  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_5beeb.dir/CheckIncludeFile.c.o -o cmTC_5beeb  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib/libedit.tbd 
+
+
+
+Performing C SOURCE FILE Test Terminfo_LINKABLE succeeded with the following output:
+Change Dir: /Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-EWoRyH
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_51f4b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_51f4b.dir/build.make CMakeFiles/cmTC_51f4b.dir/build
+Building C object CMakeFiles/cmTC_51f4b.dir/src.c.o
+/usr/local/bin/clang -DTerminfo_LINKABLE  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -MD -MT CMakeFiles/cmTC_51f4b.dir/src.c.o -MF CMakeFiles/cmTC_51f4b.dir/src.c.o.d -o CMakeFiles/cmTC_51f4b.dir/src.c.o -c /Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/CMakeScratch/TryCompile-EWoRyH/src.c
+Linking C executable cmTC_51f4b
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51f4b.dir/link.txt --verbose=1
+/usr/local/bin/clang  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_51f4b.dir/src.c.o -o cmTC_51f4b  /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/usr/lib/libcurses.tbd 
+
+
+Source file was:
+    #ifdef __cplusplus
+    extern "C" {
+    #endif
+    int setupterm(char *term, int filedes, int *errret);
+    #ifdef __cplusplus
+    }
+    #endif
+    int main(void) { return setupterm(0, 0, 0); }
+    
+

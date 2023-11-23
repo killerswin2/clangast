@@ -1,0 +1,15 @@
+Finding Declarations
+Mangled Name: MyClass::bar at /Users/ellisnielsen/git/terminal/clangast/test_code/test.cpp:4:3 _ZN7MyClass3barEv
+Parameter count: 0
+return type: void
+
+Mangled Name: Test::TestClassStuff at /Users/ellisnielsen/git/terminal/clangast/test_code/test.cpp:11:5 _ZN4Test14TestClassStuffERK7MyClassRKi
+Parameter count: 2
+Parameters: objectClass valueForFoo 
+Types: const MyClass & const int & 
+return type: const MyClass *
+
+Mangled Name: Test::Test at /Users/ellisnielsen/git/terminal/clangast/test_code/test.cpp:15:5 ___ZN4TestC5Ev_block_invoke
+Parameter count: 0
+return type: void
+

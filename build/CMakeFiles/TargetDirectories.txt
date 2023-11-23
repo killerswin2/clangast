@@ -1,0 +1,8 @@
+/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/intrinsics_gen.dir
+/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/omp_gen.dir
+/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/acc_gen.dir
+/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/RISCVTargetParserTableGen.dir
+/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/clang-tablegen-targets.dir
+/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/ASCLANG.dir
+/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/edit_cache.dir
+/Users/ellisnielsen/git/terminal/clangast/build/CMakeFiles/rebuild_cache.dir
