@@ -124,7 +124,16 @@ public:
         stringInternalFunctionName = stringInternalFunctionName.trim(" \t\n\v\f\r\"");
 
         auto& functionMap = scriptingCreator.GetFunctionMap();
-        functionMap.insert_or_assign(stringFunctionName.str(), stringInternalFunctionName.str());
+
+        if(functionMap.find(stringFunctionName.str()) != functionMap.end())
+        {
+            // TODO: Add warning code for duplicates
+        }
+        else
+        {
+           functionMap.insert_or_assign(stringFunctionName.str(), stringInternalFunctionName.str());
+        }
+
     }
 
     //#define CREATE_CLASS(ClassName, InternalClassName)
@@ -156,6 +165,15 @@ public:
         stringInternalClassName = stringInternalClassName.trim(" \t\n\v\f\r\"");
 
         auto& classMap = scriptingCreator.GetClassMap();
-        classMap.insert_or_assign(stringClassName.str(), stringInternalClassName.str());
+
+        if(classMap.find(stringClassName.str()) != classMap.end())
+        {
+            // TODO: Add warning code for duplicates
+        }
+        else
+        {
+            classMap.insert_or_assign(stringClassName.str(), stringInternalClassName.str());
+        }
+
     }
 };
